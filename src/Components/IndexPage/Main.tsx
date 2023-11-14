@@ -1,4 +1,4 @@
-import { IconPizza, IconPlanet, IconGlass, IconSocial } from "@tabler/icons-react"
+import { IconPizza, IconPlanet, IconGlass, IconBrandInstagram } from "@tabler/icons-react"
 import { ServiceCard } from "../General/Cards/ServiceCard";
 import { ImagePart } from "./ImagePart";
 export const Main = () => {
@@ -7,7 +7,7 @@ export const Main = () => {
         <ServiceCard to="FoodList" content="Comidas" direction="horizontal" width="40%" height="95px"  Icon={IconPizza} />
         <ServiceCard content="Lugares" direction="horizontal" width="40%" height="95px" Icon={IconPlanet} />
         <ServiceCard content="Bebidas" direction="horizontal" width="40%" height="95px" Icon={IconGlass} />
-        <ServiceCard content="Redes" direction="horizontal" width="40%" height="95px" Icon={IconSocial} />
+        <ServiceCard content="Redes" direction="horizontal" width="40%" height="95px" Icon={IconBrandInstagram  } />
       <ImagePart />
     </div>
   );

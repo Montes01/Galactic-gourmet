@@ -15,7 +15,7 @@ export const Filters = ({ setFoods }: Props) => {
     );
   };
   return (
-    <section className="flex items-center gap-12 px-12 py-5 w-full">
+    <section className="flex medium:justify-center items-center gap-12 px-12 py-5 w-full">
       <ComboBox
         onChange={handleCategoryChange}
         label="Categoria"

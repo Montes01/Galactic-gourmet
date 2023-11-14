@@ -7,7 +7,7 @@ interface Props {
   className?: string;
   Icon: (props: TablerIconsProps) => JSX.Element;
 }
-export const NavLink = ({ to, content, Icon, className }: Props) => {
+export const  NavLink = ({ to, content, Icon, className }: Props) => {
   return (
     <li className={className}>
       {Icon != null && <Icon/>}

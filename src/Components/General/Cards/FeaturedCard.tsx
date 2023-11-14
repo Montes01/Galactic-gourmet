@@ -17,7 +17,7 @@ export const FeaturedCard = ({ title, image }: Props) => {
       className="flex p-0 border-none text-white duration-75 hover:scale-105 transition-transform cursor-pointer flex-col h-64 max-h-[80vh] w-60 items-center rounded-xl bg-gradient-to-t from-zinc-600 to-[#0af]"
     >
       <img
-        src={image ? image : "/src/assets/AstronautPotatos.jpg"}
+        src={image ?? "/src/assets/AstronautPotatos.jpg"}
         className="rounded-t-xl w-full h-5/6 object-cover"
         alt={`image called ${title} from ${image}`}
       />
@@ -28,9 +28,9 @@ export const FeaturedCard = ({ title, image }: Props) => {
         ref={modalRef}
         className="py-12 w-screen h-screen px-20 cursor-default backdrop-brightness-[0.3] rounded-xl border bg-transparent backdrop-blur-sm"
       >
-        <section className="flex h-full w-full p-12 flex-col justify-center items-center">
-          <div className="modal-box rounded-xl border flex flex-col gap-7 items-center pointer-events-none bg-teal-600 px-12 py-7">
-            <img src={image} className="h-60 rounded-xl" alt="" />
+        <section className="flex h-full max-h-screen w-full p-12 flex-col justify-center items-center">
+          <div className="modal-box rounded-xl max-h-[60vh] border flex flex-col gap-7 items-center pointer-events-none bg-teal-600 px-12 py-7">
+            <img src={image} className="h-60 max-h-[40vh] rounded-xl" alt="" />
             <h3 className="font-bold text-lg">{title}</h3>
             <p className="">Press ESC key or click outside to close</p>
           </div>
