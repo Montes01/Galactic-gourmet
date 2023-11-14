@@ -23,7 +23,10 @@ export const categoryFilters: option<category>[] = [
   },
 ];
 
-export const AllFilter = "All"
+export const AllFilter = "All";
+
+export const OurDescription =
+  "Somos un restaurante bastante divertido con una tematica basada en el espacio exterior con unos platos bastante agradables al gusto humano tanto como extraterrestre. Despues de probar nuestra comida parecera que no quieres dejar de probarla nunca";
 
 export const foods: food[] = [
   // entradas

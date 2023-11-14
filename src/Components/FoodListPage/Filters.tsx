@@ -1,8 +1,7 @@
 import { ChangeEvent, Dispatch, SetStateAction } from "react";
 import { food } from "../../Constants/Types";
-import { AllFilter, categoryFilters } from "../../Constants/Consts";
+import { AllFilter, categoryFilters,foods } from "../../Constants/Consts";
 import { ComboBox } from "../General/ComboBox";
-import { foods } from "../../Constants/Consts";
 interface Props {
   setFoods: Dispatch<SetStateAction<food[]>>;
 }
