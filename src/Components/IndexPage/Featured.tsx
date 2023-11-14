@@ -9,11 +9,10 @@ export const Featured = () => {
       </h2>
       <section className="flex flex-wrap justify-center items-center  gap-12 p-5">
         {foods
-          .toSorted((a, b) => a.title.localeCompare(b.title))
           .slice(number, number + 3)
-          .map((el, index) => {
+          .map((el) => {
             return (
-              <FeaturedCard title={el.title} image={el.image} key={index} />
+              <FeaturedCard title={el.title} image={el.image} />
             );
           })}
       </section>

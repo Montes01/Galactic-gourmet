@@ -22,7 +22,7 @@ export const ServiceCard = ({
     <Link
       to={to ?? "#"}
       className={`${
-        direction === "vertical" ? "col" : "row"
+        direction === "vertical" ? "flex-col" : "flex-row"
       } text-xl text-white hover:scale-105 transition-transform active:opacity-90 flex items-center justify-start px-5 gap-2 rounded-xl bg-[#252525]`}
       style={{ width, height }}
     >

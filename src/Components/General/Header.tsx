@@ -11,7 +11,7 @@ import {
 import { useState, useRef } from "react";
 import { ResponsiveMenu } from "./ResponsiveMenu";
 export const Header = () => {
-  const navRef = useRef<HTMLElement>();
+  const navRef = useRef<any>();
   const [isMenuShowed, setIsMenuShowed] = useState(false);
   const handleClick = () => {
     setIsMenuShowed(true);
@@ -27,7 +27,7 @@ export const Header = () => {
   };
   return (
     <>
-      <header className="px-8 py-5 bg-[#252525] flex w-full items-center justify-between">
+      <header className="small:gap-7 px-8 py-5 bg-[#252525] flex w-full items-center justify-between">
         <nav className="medium:hidden">
           <ul className="flex items-center justify-end gap-12">
             <NavLink
@@ -49,7 +49,7 @@ export const Header = () => {
           <Link
             to="/"
             role="banner"
-            className="select-none bg-clip-text bg-gradient-to-r text-3xl tracking-wide font-normal from-blue-300 to-white text-transparent"
+            className="small:text-xl select-none bg-clip-text bg-gradient-to-r text-3xl tracking-wide font-normal from-blue-300 to-white text-transparent"
           >
             Galactic Gourmet
           </Link>

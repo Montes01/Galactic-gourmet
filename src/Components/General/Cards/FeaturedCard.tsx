@@ -26,13 +26,12 @@ export const FeaturedCard = ({ title, image }: Props) => {
       </strong>
       <dialog
         ref={modalRef}
-        className="py-12 w-screen h-screen px-20 cursor-default backdrop-brightness-[0.3] rounded-xl border bg-transparent backdrop-blur-sm"
+        className="medium:p-0 py-12 w-screen h-screen px-20 cursor-default backdrop-brightness-[0.3] rounded-xl border bg-transparent backdrop-blur-sm"
       >
-        <section className="flex h-full max-h-screen w-full p-12 flex-col justify-center items-center">
-          <div className="modal-box rounded-xl max-h-[60vh] border flex flex-col gap-7 items-center pointer-events-none bg-teal-600 px-12 py-7">
+        <section className="flex h-full max-h-screen w-full p-12 medium:p-0 flex-col justify-center items-center">
+          <div className="modal-box rounded-xl max-h-[60vh] medium:p-0 small:flex-row border flex flex-col gap-7 items-center pointer-events-none bg-teal-600 px-12 py-7">
             <img src={image} className="h-60 max-h-[40vh] rounded-xl" alt="" />
             <h3 className="font-bold text-lg">{title}</h3>
-            <p className="">Press ESC key or click outside to close</p>
           </div>
           <form method="dialog" className="m-4 modal-backdrop">
             <button>cerrar</button>

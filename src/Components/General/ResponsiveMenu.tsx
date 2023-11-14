@@ -1,9 +1,8 @@
 import {
-    IconHelpOctagon,
-  IconHome2,
-  IconPhone,
+  IconHelpOctagon,
   IconToolsKitchen2,
   IconMenu2 as MenuIcon,
+  IconPhone
 } from "@tabler/icons-react";
 import { NavLink } from "./NavLink";
 import { MutableRefObject } from "react";
@@ -17,7 +16,7 @@ export const ResponsiveMenu = ({ handleCloseClick, navRef }: Props) => {
   return (
     <section
       ref={navRef}
-      className="absolute z-30 bg-principal translate-x-28 transition-transform duration-200 flex flex-col gap-12 right-0 h-screen max-w-[100vw] w-60"
+      className="fixed z-30 bg-principal translate-x-28 transition-transform duration-200 flex flex-col gap-12 right-0 h-screen max-w-[100vw] w-60"
     >
       <button className="" onClick={handleCloseClick}>
         <MenuIcon />
@@ -35,6 +34,12 @@ export const ResponsiveMenu = ({ handleCloseClick, navRef }: Props) => {
             to="/FoodList"
             content="Menu"
             Icon={IconToolsKitchen2}
+          />
+          <NavLink
+            className="flex gap-4"
+            to="/Contact"
+            content="Contacto "
+            Icon={IconPhone}
           />
         </ul>
       </nav>
