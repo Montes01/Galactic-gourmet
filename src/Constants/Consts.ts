@@ -33,7 +33,7 @@ export const Social = {
     "https://instagram.com/galactico_gourmet?igshid=MWFvNnlvY3o3cmw2Mg==",
   Gmail: "galacticogourmet@gmail.com",
   Facebook: "https://www.facebook.com/profile.php?id=61553501942324",
-  Whatsapp: "https://wa.me/3124115302",
+  Whatsapp: "https://wa.me/message/2TGHP3BK3T2FG1",
 };
 
 export const foods: food[] = [
