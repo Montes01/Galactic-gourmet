@@ -72,7 +72,7 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <button className="hidden medium:block" onClick={handleClick}>
+        <button className="hidden medium:block px-3" onClick={handleClick}>
           <MenuIcon />
         </button>
       </header>
