@@ -2,9 +2,9 @@ import { Social } from "../../Constants/Consts";
 
 export const Contact = () => {
   return (
-    <div className="relative flex items-top justify-center min-h-screen bg-white dark:bg-zinc-900  sm:items-center sm:pt-0">
+    <div className="relative flex items-top justify-center bg-white dark:bg-zinc-900  sm:items-center sm:pt-0">
       <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div className="mt-8 overflow-hidden">
+        <div className="mt-8 overflow-hidden py-20">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="p-6 mr-2 bg-gray-100 dark:bg-zinc-800 sm:rounded-lg">
               <h1 className="text-4xl sm:text-5xl text-gray-200 dark:text-white font-extrabold tracking-tight">
@@ -84,9 +84,9 @@ export const Contact = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                <p className="ml-4 text-ellipsis text-md tracking-wide font-semibold w-40">
                   {Social.Gmail}
-                </div>
+                </p>
               </div>
             </div>
 
