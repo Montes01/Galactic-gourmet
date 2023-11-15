@@ -2,10 +2,10 @@ import {
   IconHelpOctagon,
   IconToolsKitchen2,
   IconMenu2 as MenuIcon,
-  IconPhone
+  IconPhone,
 } from "@tabler/icons-react";
 import { NavLink } from "./NavLink";
-import { MutableRefObject } from "react";
+import { MutableRefObject, useEffect } from "react";
 
 interface Props {
   handleCloseClick: () => void;
@@ -13,6 +13,16 @@ interface Props {
 }
 
 export const ResponsiveMenu = ({ handleCloseClick, navRef }: Props) => {
+  useEffect(() => {
+    document
+      .getElementById("navigator")
+      ?.addEventListener("click", handleCloseClick);
+    return () => {
+      document
+        .getElementById("navigator")
+        ?.removeEventListener("click", handleCloseClick);
+    };
+  }, []);
   return (
     <section
       ref={navRef}
@@ -31,7 +41,7 @@ export const ResponsiveMenu = ({ handleCloseClick, navRef }: Props) => {
           />
           <NavLink
             className="flex gap-4"
-            to="/FoodList"
+            to="/FoodList/All"
             content="Menu"
             Icon={IconToolsKitchen2}
           />

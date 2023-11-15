@@ -13,6 +13,7 @@ import { ResponsiveMenu } from "./ResponsiveMenu";
 export const Header = () => {
   const navRef = useRef<any>();
   const [isMenuShowed, setIsMenuShowed] = useState(false);
+
   const handleClick = () => {
     setIsMenuShowed(true);
     setTimeout(() => {
@@ -64,7 +65,7 @@ export const Header = () => {
             />
             <NavLink
               className="flex gap-4"
-              to="/FoodList"
+              to="/FoodList/All"
               content="Menu"
               Icon={IconToolsKitchen2}
             />
